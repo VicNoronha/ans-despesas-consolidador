@@ -2,7 +2,7 @@ package model;
 
 import java.math.BigDecimal;
 
-public class DespesaRecord {
+public class ExpenseRecord {
 
     private String cnpj;
     private String razaoSocial;
@@ -11,13 +11,22 @@ public class DespesaRecord {
     private BigDecimal valorDespesas;
 
 
-    public DespesaRecord(String cnpj, String razaoSocial, int ano, int trimestre, BigDecimal valorDespesas) {
+
+
+    public ExpenseRecord(String cnpj,
+                         String razaoSocial,
+                         int ano,
+                         int trimestre,
+                         BigDecimal valorDespesas) {
+
         this.cnpj = cnpj;
         this.razaoSocial = razaoSocial;
         this.ano = ano;
         this.trimestre = trimestre;
         this.valorDespesas = valorDespesas;
+
     }
+
 
     public int getAno() {
         return ano;
@@ -47,7 +56,14 @@ public class DespesaRecord {
         return trimestre;
     }
 
+    public BigDecimal getValorDespesas() {
+        return valorDespesas;
+    }
+
+
     public void setTrimestre(int trimestre) {
         this.trimestre = trimestre;
     }
+
+
 }

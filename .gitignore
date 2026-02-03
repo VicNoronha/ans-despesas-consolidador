@@ -28,3 +28,18 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+# IntelliJ
+.idea/
+*.iml
+
+# Maven
+target/
+
+# Dados baixados/gerados
+data/
+consolidado_despesas.csv
+consolidado_despesas.zip
+
+# SO
+.DS_Store
+Thumbs.db
